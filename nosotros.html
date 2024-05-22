@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="funciones.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Paraíso Verde | Sobre Nosotros</title>
+
+    <script> 
+          $(document).ready(function() {
+            LlenarNavbar();
+            
+            $('.nav-link').on('click', function() {
+                // Eliminar la clase active-link de todos los enlaces
+                $('.nav-link').removeClass('active-link');
+                // Añadir la clase active-link al enlace clicado
+                $(this).addClass('active-link');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div id="idNavbar"></div>
+
+
+    <main class="container-fluid">
+        <br>
+       
+        <div class="row">
+            <div class="col">
+                <h1>¡Bienvenidos a Paraiso Verde!</h1>
+                <p>
+                    Somos un grupo de vecinos apasionados por la jardinería que, con el apoyo de los talentosos estudiantes de Duoc UC,
+                    hemos creado esta plataforma para facilitar tus compras y, al mismo tiempo, contribuir a una noble causa. Aquí
+                    encontrarás todo lo que necesitas para embellecer tus espacios: desde maceteros y tierra de hojas hasta una amplia
+                    variedad de flores y arbustos. Cada compra que realices no solo transformará tu hogar, sino que también ayudará a
+                    nuestra fundación sin fines de lucro a seguir creciendo. ¡Únete a nuestra comunidad y hagamos florecer juntos un
+                    futuro más verde y solidario!
+                </p>
+            </div>
+            <img src="./assets/nosotros.jpg" class="img-fluid" alt="" width="300px">
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <h1>Total recaudado: $1000000</h1>
+                <h1>Porcentaje dirigido a la fundacion: 50%</h1>
+            </div>
+            <img src="imagenes/fundacion.jpg" class="img-fluid" alt="" width="300px">
+        </div>
+    </main>
+    <br>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid navbar-personalizado d-flex align-items-center">
+        <div class="row">
+            <div class="col">
+                <div class="logo-background">
+                    <img src="imagenes/logoJardineria.png" alt="Logo de Paraiso Verde" style="margin-top: 40px; margin-bottom: auto;" width="80px">
+                </div>
+            </div>
+            <div class="col">
+                <span class="footer-title">Tienda</span>
+                <hr class="footer-hr">
+                <ul>
+                    <li>Nosotros</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+    
+            <div class="col">
+                <span class="footer-title">Plantas y Materiales Vegetales</span>
+                <hr class="footer-hr">
+                <ul>
+                    <li>Flores</li>
+                    <li>Arbustos</li>
+                    <li>Árboles</li>
+                    <li>Enredaderas</li>
+                    <li>Césped</li>
+                </ul>
+            </div>
+            <div class="col">
+                <span class="footer-title">Sustratos y abonos</span>
+                <hr class="footer-hr">
+                <ul>
+                    <li>Tierra para macetas</li>
+                    <li>Tierra de hojas</li>
+                    <li>Compost</li>
+                    <li>Fertilizantes (orgánicos e inorgánicos)</li>
+                    <li>Turba</li>
+                </ul>
+            </div>
+            <div class="col">
+                <span class="footer-title">Maceteros y jardineras</span>
+                <hr class="footer-hr">
+                <ul>
+                    <li>Macetas de plástico, barro, cerámica</li>
+                    <li>Jardineras de diferentes materiales</li>
+                    <li>Contenedores elevados</li>
+                </ul>
+            </div>
+            <div class="col">
+                <span class="footer-title">Herramientas de Jardinería</span>
+                <hr class="footer-hr">
+                <ul>
+                    <li>Palas y paletas</li>
+                    <li>Rastrillos</li>
+                    <li>Tijeras de podar</li>
+                    <li>Cuchillos de injerto</li>
+                    <li>Azadas</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
